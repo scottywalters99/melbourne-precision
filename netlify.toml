@@ -1,0 +1,12 @@
+[build]
+  # The command to compile your site
+  command = "npm run build"
+  
+  # The directory where Vite outputs the production files
+  publish = "dist"
+
+# This block fixes the "404 on Refresh" issue common in React apps
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
